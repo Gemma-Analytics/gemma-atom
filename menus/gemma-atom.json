@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Convert gemma-atom",
+        "command": "gemma-atom:convert"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "gemma-atom",
+          "submenu": [
+            {
+              "label": "Convert",
+              "command": "gemma-atom:convert"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

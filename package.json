@@ -6,7 +6,7 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "gemma-atom:convert"
+    "atom-workspace": "gemma-atom:turntoref"
   },
   "repository": "https://github.com/atom/gemma-atom",
   "license": "MIT",

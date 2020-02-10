@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Convert gemma-atom",
-        "command": "gemma-atom:convert"
+        "label": "Turn text to dbt ref()",
+        "command": "gemma-atom:turntoref"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "gemma-atom",
           "submenu": [
             {
-              "label": "Convert",
-              "command": "gemma-atom:convert"
+              "label": "Turn text to dbt ref()",
+              "command": "gemma-atom:turntoref"
             }
           ]
         }

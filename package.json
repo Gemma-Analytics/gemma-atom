@@ -2,13 +2,13 @@
   "name": "gemma-atom",
   "main": "./lib/gemma-atom",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Snippets and commands to boost Atom productivity. Created and maintained by Gemma Analytics.",
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "gemma-atom:convert"
+    "atom-workspace": "gemma-atom:turntoref"
   },
-  "repository": "https://github.com/atom/gemma-atom",
+  "repository": "https://github.com/Gemma-Analytics/gemma-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

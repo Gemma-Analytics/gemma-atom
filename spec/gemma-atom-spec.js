@@ -15,7 +15,7 @@ describe('GemmaAtom', () => {
     activationPromise = atom.packages.activatePackage('gemma-atom');
   });
 
-  describe('when the gemma-atom:convert event is triggered', () => {
+  describe('when the gemma-atom:turntoref event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -23,7 +23,7 @@ describe('GemmaAtom', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'gemma-atom:convert');
+      atom.commands.dispatch(workspaceElement, 'gemma-atom:turntoref');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +37,7 @@ describe('GemmaAtom', () => {
 
         let gemmaAtomPanel = atom.workspace.panelForItem(gemmaAtomElement);
         expect(gemmaAtomPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'gemma-atom:convert');
+        atom.commands.dispatch(workspaceElement, 'gemma-atom:turntoref');
         expect(gemmaAtomPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +55,7 @@ describe('GemmaAtom', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'gemma-atom:convert');
+      atom.commands.dispatch(workspaceElement, 'gemma-atom:turntoref');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +65,7 @@ describe('GemmaAtom', () => {
         // Now we can test for view visibility
         let gemmaAtomElement = workspaceElement.querySelector('.gemma-atom');
         expect(gemmaAtomElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'gemma-atom:convert');
+        atom.commands.dispatch(workspaceElement, 'gemma-atom:turntoref');
         expect(gemmaAtomElement).not.toBeVisible();
       });
     });

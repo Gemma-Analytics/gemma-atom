@@ -1,5 +1,16 @@
 # gemma-atom package
 
-A short description of your package.
+This package is created to boost productivity with Atom at Gemma Analytics. We work extensively with [dbt](https://www.getdbt.com/) and this packages' content reflect it. It is generally assumed that a user of this package also uses the `atom-dbt` package.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+## Commands ##
+
+### Turn to reference ###
+
+Command: CTRL + ALT + j
+
+Turn selected text to a reference, like so:
+
+Selected text: `schema.table` or `table` (e.g. `bijan_dbt.fact_sales`)
+Result: `{{ ref('table') }}`
+
+This is useful to convert queries written in a query editor to dbt models.

@@ -10,7 +10,8 @@ Command: CTRL + ALT + j
 
 Turn selected text to a reference, like so:
 
-Selected text: `schema.table` or `table` (e.g. `bijan_dbt.fact_sales`)
-Result: `{{ ref('table') }}`
+Selected text: `schema.table` or `table` or `database.schema.table` (e.g. `bijan_dbt.fact_sales`)
 
-This is useful to convert queries written in a query editor to dbt models.
+Result: `{{ ref('table') }}` / `{{ ref('fact_sales') }}`
+
+This is useful to convert queries written in a query editor to dbt models. Remove double quotes if they exist.
